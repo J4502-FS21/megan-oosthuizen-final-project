@@ -1,1 +1,1 @@
-https://github.com/J4502-FS21/megan-oosthuizen-final-project
+https://j4502-fs21.github.io/megan-oosthuizen-final-project/
