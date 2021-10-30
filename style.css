@@ -12,7 +12,41 @@ h1 {
   color: #56A3A6
   font-weight: 700;
   margin: auto;
-  padding: auto;
+  padding: 10px;
   text-align: center;
   font-size: 2.5em;
+}
+
+.navcontainer nav {
+  background: #56A3A6;
+  display: grid;
+}
+.navcontainer ul {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #56A3A6;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.navcontainer li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 10px;
+  padding:10px;
+}
+.navcontainer a {
+  text-decoration: none;
+  list-style-type: none;
+  font-style:normal;
+  text-transform: inherit;
+  color: #000000;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+.navcontainer a:hover {
+  color: #DE6E4B;
 }
