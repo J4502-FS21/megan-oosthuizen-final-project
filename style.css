@@ -1,1 +1,18 @@
+body {
+  background: #FEEFDD
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  font-family: 'Oswald', sans-serif;
+  font-weight:700;
+}
 
+h1 {
+  font-family: 'Oswald' sans-serif;
+  color: #56A3A6
+  font-weight: 700;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  font-size: 2.5em;
+}
