@@ -3,7 +3,7 @@ body {
   text-align: center;
   margin: auto;
   padding: auto;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', serif;
   font-weight:700;
 }
 
@@ -49,4 +49,38 @@ h1 {
 }
 .navcontainer a:hover {
   color: #DE6E4B;
+}
+
+h2 {
+  font-family: 'Oswald,' san-sans-serif;
+  font-size: 1.5em
+  font-weight: 400
+}
+
+p {
+  font-family: 'Quattrocento,' serif;
+  font-size: 1em
+  display: block;
+}
+
+.thbheader {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+
+.thbcaption {
+  font-family: 'Quattrocento,' serif;
+  text-align:right;
+  font-size: 0.8rem;
+  font-style:italic;
+}
+
+.gallerymap {
+  width:800px;
+  height:400px;
+  margin-right: auto;
+  margin-left: auto;
 }
