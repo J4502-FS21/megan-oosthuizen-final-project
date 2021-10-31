@@ -1,8 +1,6 @@
 body {
   background: #FEEFDD
   text-align: center;
-  margin: auto;
-  padding: auto;
   font-family: 'Oswald', serif;
   font-weight:700;
 }
@@ -82,4 +80,13 @@ p {
   height:400px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.placeholder1 {
+  width:auto;
+  height:auto;
+  display: inline;
+  padding: 10px
+  float:left;
+  border-image-repeat: stretch;
 }
