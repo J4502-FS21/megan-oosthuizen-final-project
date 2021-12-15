@@ -122,8 +122,13 @@ iframe {
   display: flex;
   flex-direction: column;
   padding: 40px;
+  align-items: center;
 }
 
+.flex-item {
+  display: flex;
+  align-items: center;
+}
 .experience {
   text-align: left;
   margin-left:400px;
@@ -163,51 +168,7 @@ iframe {
    box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-.info-container p{
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 400px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -218,7 +179,6 @@ iframe {
   text-align: center;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -227,7 +187,7 @@ iframe {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition:0.6s ease;
 }
 
 .active, .dot:hover {
