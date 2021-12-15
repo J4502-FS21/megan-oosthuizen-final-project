@@ -3,11 +3,12 @@ body {
   background-color: #FEEFDD;
   font-family: "Oswald", serif;
   font-weight:700;
+  font-size: 1em;
 }
 
 h1 {
   font-family: "Oswald", sans-serif;
-  color: #56A3A6
+  color: #DE6E4B;
   font-weight: 700;
   margin: auto;
   padding: 10px;
@@ -66,19 +67,18 @@ h1 {
 }
 
 .menu_trigger {
-  display:
+  display: flex;
 }
-]
 
 h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 1.5em
-  font-weight: 400
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 p {
   font-family: "Quattrocento", serif;
-  font-size: 1em
+  font-size: 1.25em;
 }
 
 .thbheader {
@@ -91,7 +91,7 @@ p {
 .thbcaption {
   font-family: "Quattrocento", serif;
   text-align:right;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-style:italic;
 }
 
@@ -100,21 +100,16 @@ iframe {
   width: 600px;
   display: flex;
   margin: auto;
-
-#placeholder1 {
-  width:auto;
-  height:auto;
-  display: block;
-  padding: 10px
 }
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-    max-height: 100vh;
-    align-content: center;
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  max-height: 100vh;
+  align-content: center;
   }
   .cards img {
     margin: 10px;
@@ -131,6 +126,7 @@ iframe {
 
 .experience {
   text-align: left;
+  margin-left:400px;
 }
 
 .whycareparagraph {
@@ -141,8 +137,8 @@ iframe {
 
 #projectdes {
   display: block;
-  padding-left:10px;
-  padding-right: 10px;
+  padding-left:30px;
+  padding-right: 30px;
 }
 
 .footer {
@@ -164,11 +160,8 @@ iframe {
    display: inline-block;
    vertical-align: top;
    padding: 20px;
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
    box-sizing: border-box;
 }
-
 
 * {
   box-sizing: border-box;
@@ -177,53 +170,66 @@ iframe {
 .info-container p{
     padding: 20px;
     margin: 10px;
-    text-align:
-}
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
+    text-align: center;
 }
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
   cursor: pointer;
-}
-
-.column img:hover {
-  opacity: 1;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
   position: absolute;
-  display: block;
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
   color: white;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-/* Closable button inside the image */
-.closebtn {
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
   position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
   cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
 }
