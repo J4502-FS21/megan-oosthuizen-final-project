@@ -1,12 +1,12 @@
 body {
   background: #FEEFDD;
   background-color: #FEEFDD;
-  font-family: 'Oswald', serif;
+  font-family: "Oswald", serif;
   font-weight:700;
 }
 
 h1 {
-  font-family: 'Oswald' sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #56A3A6
   font-weight: 700;
   margin: auto;
@@ -62,17 +62,22 @@ h1 {
   font-size: 1.5em;
 }
 .navcontainer a:hover {
-  color: #DE6E4B;
+  color: #FEEFDD;
 }
 
+.menu_trigger {
+  display:
+}
+]
+
 h2 {
-  font-family: 'Oswald,' sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.5em
   font-weight: 400
 }
 
 p {
-  font-family: 'Quattrocento,' serif;
+  font-family: "Quattrocento", serif;
   font-size: 1em
 }
 
@@ -84,19 +89,17 @@ p {
 }
 
 .thbcaption {
-  font-family: 'Quattrocento,' serif;
+  font-family: "Quattrocento", serif;
   text-align:right;
   font-size: 0.8rem;
   font-style:italic;
 }
 
-.gallerymap {
-  width:800px;
-  height:400px;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-}
+iframe {
+  height: 400px;
+  width: 600px;
+  display: flex;
+  margin: auto;
 
 #placeholder1 {
   width:auto;
@@ -142,11 +145,11 @@ p {
   padding-right: 10px;
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: flex-end;
   padding: 10px;
-  background-color: #DE6E4B
+  background-color: #DE6E4B;
 }
 
 .intro-container {
@@ -166,8 +169,61 @@ footer {
    box-sizing: border-box;
 }
 
+
+* {
+  box-sizing: border-box;
+}
+
 .info-container p{
     padding: 20px;
     margin: 10px;
     text-align:
+}
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: absolute;
+  display: block;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }

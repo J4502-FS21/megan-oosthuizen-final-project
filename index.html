@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Megan Oosthuizen</title>
+  <title>Art Across Mid-Missouri</title>
   <meta name="description" content = "Megan Oosthuizen's Final Project"
   <meta name="Megan Oosthuizen">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,13 +47,26 @@
   <div>Vitae justo eget magna fermentum iaculis. Nunc id cursus metus aliquam. Tincidunt arcu non sodales neque. Ac ut consequat semper viverra nam libero justo laoreet.  Sit amet nisl purus in mollis nunc sed id. Adipiscing tristique risus nec feugiat in fermentum posuere. Placerat vestibulum lectus mauris ultrices eros in cursus. At urna condimentum mattis pellentesque id. In cursus turpis massa tincidunt dui ut ornare. Morbi tristique senectus et netus et malesuada.</div>
 </div>
 
-<main class="cards">
-  <img src="placeholder.png" alt="An image will go here.">
-  <img src="placeholder.png" alt="An image will go here.">
-  <img src="placeholder.png" alt="An image will go here.">
-  <img src="placeholder.png" alt="An image will go here.">
-  <img src="placeholder.png" alt="An image will go here.">
-  <img src="placeholder.png" alt="An image will go here.">
-</main>
+<div class="row">
+  <div class="column">
+    <img src="dawkins.jpg" alt="Nature" onclick="myFunction(this);"/>
+  </div>
+  <div class="column">
+    <img src="hatt.jpg" alt="Snow" onclick="myFunction(this);"/>
+  </div>
+  <div class="column">
+    <img src="snowflake.jpg" alt="Mountains" onclick="myFunction(this);"/>
+  </div>
+</div>
 
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
 <footer>Created by Megan Oosthuizen<footer>
